@@ -2,7 +2,7 @@ var supermarket = new Object();
 
 supermarket.name = 'Red Wing Market';
 supermarket.maxStock = 200;
-supermarket.currentStock = 100;
+supermarket.currentStock = prompt("enter current stock");
 supermarket.checkStock = function() {
     return "you have " + ((this.maxStock - this.currentStock) / 2) + " goods left in stock.";
 };
